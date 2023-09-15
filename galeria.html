@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Amrich Csongor">
+        <meta name="description" content="Ablak Bisztró Vegán Reggeliző weboldala">
+        <title>Ablak Bisztró</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="kepek/logo.webp" rel="icon" type="image/x-icon">
+
+        <script src="jQuery/jquery-3.6.1.js"></script>
+        <script src="jQuery/galleria.js"></script>
+        <script src="jQuery/themes/classic/galleria.classic.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+            $('#images').galleria({
+            width:1000,
+            height:1000
+            });
+            });
+            </script>
+    </head>
+
+    <body>
+        <header>
+            <!--<img class="header-left" src="kepek/navbarlogo3.png" alt="Logo headerben kozepen">-->
+            <nav>
+                <ul class="links">
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="etlap.html">Menü</a></li>
+                    <li><a href="#" id="active">Galéria</a></li>
+                    
+                </ul>
+            </nav>
+            <a class="contact" href="kapcsolat.html">Kapcsolat</a>
+        </header>
+       
+        <article id="images">
+            <img src="kepek/pexels1.jpg" alt="teritett asztal" title="galeria1">
+            <img src="kepek/pexels2.jpg" alt="készülő étel" title="galeria2">
+            <img src="kepek/pexels3.jpg" alt="készülő étel" title="galeria3">
+            <img src="kepek/pexels4.jpg" alt="saláta tál" title="galeria4">
+            <img src="kepek/pexels5.jpg" alt="terített asztal" title="galeria5">
+            <img src="kepek/pexels6.jpg" alt="terített asztal" title="galeria6">
+            <img src="kepek/pexels7.jpg" alt="bárpult" title="galeria7">
+        </article>
+        
+        <footer>
+            <ul class="footerlinks">
+                <li>+36 55 555 5555</li>
+                <li>ablak@bisztro.hu</li>
+                <li>Hétfő-Vasárnap: 9:00 - 16:00</li>
+            </ul>
+        </footer>
+    </body>
+</html>

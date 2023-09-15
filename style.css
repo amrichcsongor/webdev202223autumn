@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@font-face{
+	font-family: 'ChocoCooky';
+	src: url('fonts/Chococooky.ttf')
+}
+body {
+	/*background-color: #ad957e;*/
+	background-image: linear-gradient(to top right, #ad957e, #756b61);
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Oswald", sans-serif;
+	color: #3a332c;
+}
+/*NAVBAR ÉS HEADER*/
+#active{
+	color: #074202;
+	font-weight: 700;
+}
+
+li, a, .contact{
+	font-weight: 500;
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #40723b;
+}
+header{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px 5% 30px 5%;
+	background-color: #dac9b9;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0px 4px 5px 0px rgba(61, 35, 0, 0.7);
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(61, 35, 0, 0.7);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(61, 35, 0, 0.7);
+}
+.header-left{
+	width: 150px;
+	cursor: pointer;
+	margin-right: auto;
+}
+.links{
+	list-style: none;
+
+}
+.links li{
+	display: inline-block;
+	padding: 0px 20px;
+}
+.links li a{
+	transition: all 0.3s ease 0s;
+}
+.links li a:hover{
+	color: black;
+}
+.links li:hover{
+	transform: scale(1.1);
+	transition: all 0.3s ease 0s;
+}
+.contact{
+	padding: 9px 25px;
+	margin-left: 20px;
+	color: #40723b;
+	background-color: #dac9b9;
+	border: solid 1px;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+}
+.contact:hover{
+	transform: scale(1.1);
+	color: black;
+	background-color: #8d9785;
+}
+
+/*CONTENT ELEMEK INDEX*/
+div#content1{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction:	row;
+	padding: 30px 10%;
+	margin-bottom: 10px;
+}
+div#content2{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction:	row-reverse;
+	padding: 30px 10%;
+	margin-bottom: 10px;
+}
+.cim{
+	font-weight: 700;
+	font-size: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.content-text{
+	margin-right: auto;
+	font-weight: 500;
+	font-size: 20px;
+	text-decoration: none;
+}
+.content-image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 11%;
+}
+.content-image img{
+	width: 500px;
+}
+.tudjmegtobbet{
+	padding: 9px 25px;
+	font-weight: 500;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: capitalize;
+	color: black;
+	border: solid 1px black;
+	border-radius: 60px;
+
+}
+
+/*CONTENT ELEMEK ETLAP*/
+#valasztas{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	padding: 30px 40%;
+}
+.tipus{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding-top: 30px ;
+	padding-bottom: 10px;
+}
+.tipus p{
+font-weight: 600;
+font-size: 25px;
+text-decoration: none;
+text-transform: uppercase;
+color: #ffe926;
+}
+.termek{
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+align-items: center;
+padding: 30px 20% 0px 20%;
+}
+
+.termek-nev{
+	font-family: 'ChocoCooky', sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffe926;
+}
+.termek-ar{
+	/*font-family: 'ChocoCooky', sans-serif;*/
+	font-weight: 500;
+	font-size: 22px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffe926;
+}
+.termek-leiras{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0px 20%;
+}
+.termek-leiras p{
+	font-family: 'ChocoCooky', sans-serif;
+	font-weight: 100;
+	font-size: 15px;
+	text-decoration: none;
+	color: #fdf9d4;
+}
+.links2{
+	padding: 9px 25px;
+	font-weight: 500;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: capitalize;
+	border: solid 1px rgb(248, 198, 157);
+	border-radius: 60px;
+}
+.links2 a{
+	color: rgb(248, 198, 157);
+}
+.links2:hover{
+	transform: scale(1.1);
+	transition: all 0.3s ease 0s;
+}
+.links2-active{
+	padding: 9px 25px;
+	font-weight: 600;
+	font-size: 22px;
+	text-decoration: none;
+	text-transform: capitalize;
+	border: solid 1px rgb(248, 198, 157);
+	border-radius: 60px;
+	background-color: #e98f28;
+}
+.links2-active a{
+	color: rgb(248, 198, 157);
+	background-color: #e98f28;
+
+}
+.links2-active:hover{
+	transform: scale(1.1);
+	transition: all 0.3s ease 0s;
+}
+/*GALERIA*/
+#images{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20%;
+}
+
+/*KAPCSOLAT*/
+#kapcsolat{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 15px 20% 15px 20%;
+}
+.kapcsolat-main{
+	padding: 10px 0px 10px 0px;
+	font-weight: 700;
+	font-size: 26px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.kapcsolat-info{
+	padding: 5px 0px 5px 0px;
+	font-weight: 450;
+	font-size: 18px;
+	text-decoration: none;
+}
+input.textbox,
+textarea.textbox,
+select.textbox{
+	width: 100%;
+	padding: 3px;
+	margin: 0%;
+	border: rgb(255, 216, 44) solid 2px;
+	border-radius: 10px;
+	font-weight: 600;
+}
+h2{
+	padding-top: 25px;
+}
+label{
+	font-size: 15px;
+	font-weight: 550;
+}
+input.button {
+	background-color: #f7dec7;
+	font-size: 1em;
+	font-weight: 600;
+	padding: 8px 8px;
+	cursor: pointer;
+	color: rgb(0, 0, 0);
+	border-style: solid;
+	border-color: rgb(255, 216, 44);
+	margin-bottom: 50px;
+}
+
+input.button:hover {
+	background-color: rgb(23, 151, 255);
+	border-color: rgba(0, 0, 0, 0.6);
+	color: rgba(255, 255, 255, 0.6);
+}
+
+input.button:active {
+	background-color: rgba(144, 153, 162, 0.6);
+	border-color: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
+}
+#form{
+	width: 600px;
+}
+#form h2{
+	text-align: center;
+}
+#kapcsolat-container{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: auto;
+	flex-direction: row;
+}
+#kapcsolat-container2{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: auto;
+	flex-direction: row;
+}
+#terkep{
+	width: 100%;
+	height: 500px;
+	margin-top: 50px;
+}
+/*FOOTER*/
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20% 10px 20%;
+	background-color: rgb(87, 87, 87, 0.6);
+	width: 100%;
+	height: 100%;
+}
+.footerlinks{
+	list-style: none;
+}
+.footerlinks li{
+	display: inline-block;
+	padding: 0px 10px;
+	color: #faba71;
+	font-weight: 300;
+	font-size: 15px;
+	text-decoration: none;
+	text-transform: capitalize;
+
+}
+
+.footerlinks li a:hover{
+	color: black;
+}
+.footerlinks li:hover{
+	transform: scale(1.1);
+	transition: all 0.3s ease 0s;
+}
+
+/*MEDIA QUERY*/
+
+@media only screen and (max-width: 828px) {
+	header{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+	}
+	.header-left{
+		margin: 0;
+	}
+	.links li{
+		display: flex;
+		padding: 5%;
+		align-items: center;
+		justify-content: center;
+	}
+	.contact{
+		padding: 10px;
+		margin-left: 0;
+	}
+	.termek-leiras p{
+		font-size: 10px;
+	}
+	#valasztas{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.links2{
+		margin: 5px 0px;
+	}
+	footer{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.footerlinks li{
+		display:block;
+		padding: 0px 0px;
+	}
+	div#content1,
+	div#content2{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		flex-basis: 33.3%;
+	}
+	.content-image{
+		margin: 20px 0px;
+	}
+	.content-image img{
+		width: 320px;
+	}
+	#form-container{
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		margin: auto;
+		flex-direction: column;
+		flex-basis: 33.3%;
+	}
+}

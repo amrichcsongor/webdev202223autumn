@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Amrich Csongor">
+        <meta name="description" content="Ablak Bisztró Vegán Reggeliző weboldala">
+        <title>Ablak Bisztró</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="kepek/logo.webp" rel="icon" type="image/x-icon">
+        <script src="jQuery/jquery-3.6.1.js"></script>
+        <style>
+            label.error {
+                color: #FB3A3A;
+            }
+        </style>
+        <script src="jQuery/jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            $("#myform").validate({
+            rules: {
+                name: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                db: {
+                    required: true,
+                },
+                eletmod: {
+                    required: true,
+                },
+                uzenet: {
+                    required: true,
+                },
+                },
+            messages: {
+                name: " Írd be a neved!",
+                password: {
+                    required: " Add meg a jelszavad!",
+                    minlength: " A jelszavad legalább 8 karakter hosszú legyen!"
+                },
+                email: "Kérlek valós email címet adj meg!",
+                db: " Kérlek add meg hányszor jártál már nálunk!",
+                eletmod: "Kérlek add meg az életmódod!",
+                uzenet: "Kérlek írd be a kívánt üzenetet!"
+                },
+
+            //ide jön a rules és a messages rész
+            });
+            });
+        </script>
+        <script src="script1.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <!--<img class="header-left" src="kepek/navbarlogo3.png" alt="Logo headerben kozepen">-->
+            <nav>
+                <ul class="links">
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="etlap.html">Menü</a></li>
+                    <li><a href="galeria.html">Galéria</a></li>
+                    
+                </ul>
+            </nav>
+            <a class="contact" href="#" id="active">Kapcsolat</a>
+        </header>
+        <div id="kapcsolat">
+            <p class="kapcsolat-main">Nyitva tartás</p>
+            <p class="kapcsolat-info">Hétfőtől vasárnapig:</p>
+            <p class="kapcsolat-info">9:00 - 16:00 óráig</p>
+            <p class="kapcsolat-main">Ablak Bisztró Vegán Reggeliző</p>
+            <p class="kapcsolat-info">8200 Veszprém</p>
+            <p class="kapcsolat-info">Rákóczi Ferenc utca 4.</p>
+            <p class="kapcsolat-info">Ablak@Bisztro.Hu</p>
+            <p class="kapcsolat-info">+36 55 555 5555</p>
+
+
+
+
+        </div>
+<div id="kapcsolat-container">
+    <div id="form">
+    <form action="http://szamtud.uni-corvinus.hu/~blang/receive.php" method="post"  id="myform" novalidate>
+            <h2>Vedd fel velünk a kapcsolatot!</h2>
+                <p><label for="name">Név:</label>
+                    <input class="textbox" type="text" name="name" id="name"></p>
+                <p><label for="email">Email cím:</label>
+                    <input class="textbox" type="text" name="email" id="email"></p>
+                <p><label for="db">Látogatásainak száma:</label>
+                    <input class="textbox" type="number" name="db" id="db"></p>
+                <p><label for="eletmod">Ön által folytatott életmód:</label>
+                    <select class="textbox" name="eletmod" id="eletmod">
+                        <option value="vgn">Vegán</option>
+                        <option value="vgt">Vegetáriánus</option>
+                        <option value="mnd">Mindenevő</option>
+                    </select></p>
+                <p><label for="uzenet">Üzenet:</label>
+                    <textarea class="textbox" rows="5" name="uzenet" id="uzenet"></textarea>
+                <table>
+                    <tr>
+						<td>
+                            <input class="button" type="submit" value="Elküld">                             
+                        </td>
+                        <td>
+                            <input class="button" type="reset" value="Töröl">
+                        </td>
+					</tr>
+				</table>
+        </form>
+        </div>
+</div>
+<div id="kapcsolat-container2">
+        
+        <div id="terkep">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201.8885018371382!2d17.90729354748727!3d47.09363857686551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47699a5e5bb293e3%3A0x6c72a1f407fb2342!2sInsedo%20Kft.!5e0!3m2!1shu!2shu!4v1681036131185!5m2!1shu!2shu" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!--
+        <div id="ajanlat">
+            <h2>Egyedi menüajánlat kedvezménnyel!</h2>
+            <p><label for="leves">Ön által választott leves:</label>
+                <select class="textbox" name="leves" id="leves">
+                    <option value="zbs">Zöldborsóleves galuskával</option>
+                    <option value="olsz">Olasz zöldségleves</option>
+                    <option value="babg">Babgulyás</option>
+                    <option value="zsr">Zöldségragu leves</option>
+                </select>
+            </p>
+            <p><label for="leves">Ön által választott saláta vagy főétel:</label>
+                <select class="textbox" name="foetel" id="foetel">
+                    <option value="sali">Cézársaláta</option>
+                    <option value="sali">Mediterrán saláta</option>
+                    <option value="sali">Fitneszsaláta</option>
+                    <option value="etel">Humusztál</option>
+                    <option value="etel">Töltött szejtán</option>
+                    <option value="etel">Zöldkrémes palacsinta</option>
+                </select>
+            </p>
+            <p><label for="leves">Ön által választott ital:</label>
+                <select class="textbox" name="ital" id="ital">
+                    <option value="udt">Üdítők (nem limonádé)</option>
+                    <option value="lmn">Limonádé</option>
+                    <option value="kv">Kávé</option>
+                    <option value="tea">Tea</option>
+                </select>
+            </p>
+            <p><input class="button" type="button" value="Kérem a menüajánlatot!" onClick="ajanlat()"></p>
+        </div>
+        -->
+</div>
+
+
+        <footer>
+            <ul class="footerlinks">
+                <li>+36 55 555 5555</li>
+                <li>ablak@bisztro.hu</li>
+                <li>Hétfő-Vasárnap: 9:00 - 16:00</li>
+            </ul>
+        </footer>
+    </body>
+</html>
